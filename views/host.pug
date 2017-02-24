@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title=title
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel="stylesheet" href='/style.css')
+  body
+    header
+      img.logo(src='/buzzer.png')
+
+    div.container
+      h2.js-active=`${users.length} joined`
+      ol.js-buzzes
+        each buzz in buzzes
+          li=`${buzz.name} on Team ${buzz.team}`
+      button.js-clear='Clear buzzes'
+
+    script(src='/socket.io/socket.io.js')
+    script(src='/host.js')
+
+

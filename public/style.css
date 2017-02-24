@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #168eea;
+  color: #fff;
+  text-align: center;
+}
+
+body,
+input,
+button {
+  font-size: 1em;
+}
+
+p {
+  margin: 2em 0;
+}
+
+ol {
+  text-align: left;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  background-color: #fff;
+}
+
+.logo {
+  width: 100%;
+  max-width: 400px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  display: block;
+  padding: 0.8em 1em;
+  margin: 1em 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 0;
+}
+
+input[type="text"],
+input[type="number"] {
+
+}
+
+button {
+  background-color: #2fd566;
+  box-shadow: 0 3px 0 0 #29ad55;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #46e079;
+  box-shadow: 0 3px 0 0 #39b562;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.buzzer {
+  height: 10em;
+  font-size: 2em;
+}
+
+.secondary {
+  background-color: #ddd;
+  color: #333;
+  box-shadow: 0 3px 0 0 #bbb;
+}
+
+.secondary:hover {
+  background-color: #eee;
+  box-shadow: 0 3px 0 0 #ccc;
+}

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title=title
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel="stylesheet" href='/style.css')
+  body
+    header
+      img.logo(src='/buzzer.png')
+
+    div.container
+      form.js-join
+        input(type='text' name='name' placeholder='Your name' required='required')
+        input(type='number' name='team' placeholder='Your team number' required='required')
+        button(type='submit')='Join!'
+
+      div.js-joined.hidden
+        button.js-buzzer.buzzer()='Buzz!!!'
+        p.js-joined-info=""
+        button.js-edit.secondary='Change teams'
+
+    script(src='/socket.io/socket.io.js')
+    script(src='/join.js')
+
+

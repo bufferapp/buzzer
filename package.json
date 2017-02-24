@@ -1,0 +1,16 @@
+{
+  "name": "buzzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Farrelly <daniel.j.farrelly@gmail.com> (http://danfarrelly.nyc)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.14.1",
+    "pug": "2.0.0-beta11",
+    "socketio": "1.0.0"
+  }
+}
