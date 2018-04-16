@@ -1,0 +1,39 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: buzzer
+  labels:
+    app: buzzer
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: buzzer
+    spec:
+      containers:
+      - name: buzzer
+        image: bufferapp/buzzer:1.1.0
+        ports:
+        - containerPort: 8090
+        resources:
+          limits:
+            cpu: 100m
+            memory: 200Mi
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: buzzer
+  labels:
+    app: buzzer
+spec:
+  ports:
+    - port: 80
+      targetPort: 8090
+      protocol: TCP
+      name: http
+  selector:
+    app: buzzer
+  type: LoadBalancer
