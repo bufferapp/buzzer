@@ -13,10 +13,13 @@ let data = {
   buzzes: new Set(),
 }
 
-const getData = () => Object.keys(data).reduce((d, key) => {
-  d[key] = data[key] instanceof Set ? [...data[key]] : data[key]
-  return d
-}, {})
+const getData = () => ({
+  users: [...data.users],
+  buzzes: [...data.buzzes].map(b => {
+    const [ name, team ] = b.split('-')
+    return { name, team }
+  })
+})
 
 app.use(express.static('public'))
 app.set('view engine', 'pug')
