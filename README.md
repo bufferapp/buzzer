@@ -26,12 +26,15 @@ Open http://localhost:8090 in your browser to start!
 The players goto the homepage (`http://localhost:8090/`) and they can enter their name and team
 number. Joining will give them a giant buzzer button!
 
-![Player view](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-v1.png?raw=true)
+Join a team                | Buzz in
+:-------------------------:|:-------------------------:
+![Join a team](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-join-v2.png?raw=true)  |  ![Buzz in](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-v2.png?raw=true)
+
 
 The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
 in between questions:
 
-![Host view](https://github.com/bufferapp/buzzer/blob/master/screenshots/host-v1.png?raw=true)
+![Host view](https://github.com/bufferapp/buzzer/blob/master/screenshots/host-v2.png?raw=true)
 
 ## License
 

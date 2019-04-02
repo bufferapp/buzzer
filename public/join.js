@@ -1,4 +1,5 @@
 const socket = io()
+const body = document.querySelector('.js-body')
 const form = document.querySelector('.js-join')
 const joined = document.querySelector('.js-joined')
 const buzzer = document.querySelector('.js-buzzer')
@@ -30,6 +31,7 @@ form.addEventListener('submit', (e) => {
   joinedInfo.innerText = `${user.name} on Team ${user.team}`
   form.classList.add('hidden')
   joined.classList.remove('hidden')
+  body.classList.add('buzzer-mode')
 })
 
 buzzer.addEventListener('click', (e) => {
@@ -39,6 +41,7 @@ buzzer.addEventListener('click', (e) => {
 editInfo.addEventListener('click', () => {
   joined.classList.add('hidden')
   form.classList.remove('hidden')
+  body.classList.remove('buzzer-mode')
 })
 
 getUserInfo()

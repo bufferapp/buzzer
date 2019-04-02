@@ -3,23 +3,24 @@ html
   head
     title=title
     meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500,700,900")
     link(rel="stylesheet" href='/style.css')
-  body
+  body.js-body
     header
-      img.logo(src='/buzzer.png')
+      img.logo(src='/buzzer-logo.svg')
 
     div.container
-      form.js-join
+      form.view.js-join
+        img(src="/lets-play.png" class="main-image")
+        h2="Let's play!"
         input(type='text' name='name' placeholder='Your name' required='required')
         input(type='number' name='team' placeholder='Your team number' required='required')
         button(type='submit')='Join!'
 
-      div.js-joined.hidden
+      div.view.js-joined.hidden
         button.js-buzzer.buzzer()='Buzz!!!'
         p.js-joined-info=""
         button.js-edit.secondary='Change teams'
 
     script(src='/socket.io/socket.io.js')
     script(src='/join.js')
-
-
