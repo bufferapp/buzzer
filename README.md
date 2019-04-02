@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/bufferapp/buzzer/blob/master/public/buzzer-logo.svg?raw=true&sanitize=true" alt="Buzzer"/>
+  <img width="400px" src="https://github.com/bufferapp/buzzer/blob/master/public/buzzer-logo.svg?raw=true&sanitize=true" alt="Buzzer"/>
 </p>
 
-A little ****uzzer app for running your own quizzes or game shows! Uses websockets to sent messages.
+A little buzzer app for running your own quizzes or game shows! Uses websockets to sent messages.
 
 ## Running the app
 
