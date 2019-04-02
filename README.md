@@ -1,4 +1,6 @@
-# Buzzer
+![Buzzer](https://github.com/bufferapp/buzzer/blob/master/public/buzzer-logo.svg?raw=true)
+
+---
 
 A little buzzer app for running your own quizzes or game shows! Uses websockets to sent messages.
 
@@ -28,13 +30,13 @@ number. Joining will give them a giant buzzer button!
 
 Join a team                | Buzz in
 :-------------------------:|:-------------------------:
-![Join a team](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-join-v2.png?raw=true)  |  ![Buzz in](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-v2.png?raw=true)
+![Join a team](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-join-v3.png?raw=true)  |  ![Buzz in](https://github.com/bufferapp/buzzer/blob/master/screenshots/player-buzzer-v3.png?raw=true)
 
 
 The host heads over to `/host` and will be able to see everyone that buzzes in and clear the list
 in between questions:
 
-![Host view](https://github.com/bufferapp/buzzer/blob/master/screenshots/host-v2.png?raw=true)
+![Host view](https://github.com/bufferapp/buzzer/blob/master/screenshots/host-v3.png?raw=true)
 
 ## License
 
