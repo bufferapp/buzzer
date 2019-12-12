@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: buzzer
-        image: bufferapp/buzzer:1.2.0
+        image: bufferapp/buzzer:1.3.0
         ports:
         - containerPort: 8090
         resources:
