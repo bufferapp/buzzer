@@ -12,7 +12,7 @@ html
       h2.js-active=`${users.length} joined`
       ol.js-buzzes
         each buzz in buzzes
-          li=`${buzz.name} on Team ${buzz.team}`
+          li=`${buzz.name}`
       button.js-clear='Clear buzzes'
 
     script(src='/socket.io/socket.io.js')
