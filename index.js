@@ -30,7 +30,7 @@ app.get('/host', (req, res) => res.render('host', Object.assign({ title }, getDa
 io.on('connection', (socket) => {
   socket.on('join', (user) => {
     data.users.add(user.id)
-    io.emit('active', [...data.users].length)
+    io.emit('active', user.name)
     console.log(`${user.name} joined!`)
   })
 

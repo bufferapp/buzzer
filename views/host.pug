@@ -6,7 +6,6 @@ html
     link(rel="stylesheet" href='/style.css')
   body
     div.container
-      h2.js-active=`${users.length} joined`
       ol.js-buzzes
         each buzz in buzzes
           li=`${buzz.name}`
