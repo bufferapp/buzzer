@@ -46,5 +46,5 @@ io.on('connection', (socket) => {
     console.log(`Clear buzzes`)
   })
 })
-
-server.listen(8090, () => console.log('Listening on 8090'))
+var port = process.env.PORT || 8090
+server.listen(port, () => console.log(`Listening on ${port}`))
