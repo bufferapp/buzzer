@@ -13,8 +13,8 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   /* background: linear-gradient(-45deg, #a6f4e5 0%, #23e6bf 47%); */
   /* background-color: rgb(44, 75, 255); */
-  background-color: #fff;
-  color: #1A2634;
+  background-color: #e40613;
+  color: #FFF;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ li {
 }
 
 header {
-  background-color: #fff;
+  background-color: #e40613;
 }
 
 .logo {
@@ -62,8 +62,8 @@ header {
 }
 
 .buzzer-mode {
-  background-color: rgb(16, 21, 78);
-  color: rgb(243, 175, 185);
+  background-color: #e40613;
+  color: rgb(255, 255, 255);
 }
 
 input[type="text"],
@@ -107,12 +107,12 @@ button:hover {
 }
 
 button:active {
-  box-shadow: rgb(171, 183, 255) 0px 0px 0px 3px;
+  box-shadow: rgb(171, 183, 255) 0px 0px 0px px;
   outline: 0px;
   transform: translateY(  1px);
 }
 button:focus {
-  box-shadow: 0 0 0 3px #ABB7FF;
+  box-shadow: 0 0 0 0 #ABB7FF;
 }
 
 .main-image {
@@ -120,17 +120,19 @@ button:focus {
 }
 
 .buzzer {
-  height: 10em;
+  height: 12em;
   font-size: 2em;
-  background-color: rgb(243, 175, 185);
+  background: url("hog-buzzer-active.png") center no-repeat;
+  background-size: 400px 400px;
   color: rgb(18, 30, 102);
 }
 .buzzer:focus {
-  box-shadow: 0 0 0 3px #ABB7FF;
+  box-shadow: 0 0 0 0 #fff;
 }
 .buzzer:hover,
 .buzzer:active {
-  background-color: #e97284;
+  background: url("hog-buzzer-disabled.png") center no-repeat;
+  background-size: 400px 400px;
 }
 
 .secondary {
@@ -139,5 +141,5 @@ button:focus {
 }
 
 .secondary:hover {
-  background-color: rgb(44, 75, 255);
+  background-color: rgb(255, 251, 44);
 }
