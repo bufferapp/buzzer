@@ -11,8 +11,6 @@ body {
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  /* background: linear-gradient(-45deg, #a6f4e5 0%, #23e6bf 47%); */
-  /* background-color: rgb(44, 75, 255); */
   background-color: #e40613;
   color: #FFF;
   text-align: center;
@@ -96,14 +94,14 @@ input[type="number"]:active {
 button {
   padding: 1.4em 1.4em;
   font-size: 1.2em;
-  background-color: #161D99;
-  color: #fff;
+  background-color: #5cb1ce;
+  color: #000;
   cursor: pointer;
   border: 0;
 }
 
 button:hover {
-  background-color: rgb(22, 29, 153);
+  background-color: #5cb1ce;
 }
 
 button:active {
@@ -123,23 +121,22 @@ button:focus {
   height: 12em;
   font-size: 2em;
   background: url("hog-buzzer-active.png") center no-repeat;
-  background-size: 400px 400px;
-  color: rgb(18, 30, 102);
+  background-size: 10em 10em;
 }
 .buzzer:focus {
   box-shadow: 0 0 0 0 #fff;
 }
 .buzzer:hover,
 .buzzer:active {
-  background: url("hog-buzzer-disabled.png") center no-repeat;
-  background-size: 400px 400px;
+  background: url("hog-buzzer-active.png") center no-repeat;
+  background-size: 320px 320px;
 }
 
 .secondary {
-  background-color: #fff;
-  color: rgb(16, 21, 78);
+  background-color: #5cb1ce;
+  color: rgb(0, 0, 0);
 }
 
 .secondary:hover {
-  background-color: rgb(255, 251, 44);
+  background-color: #5cb1ce;
 }

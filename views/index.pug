@@ -11,16 +11,16 @@ html
 
     div.container
       form.view.js-join
-        img(src="/lets-play.png" class="main-image")
+        img(src="/richard.jpeg" class="main-image")
         h2="Let's play!"
         input(type='text' name='name' placeholder='Your name' required='required')
-        input(type='number' name='team' placeholder='Your team number' required='required')
+        input(type='number' min="1" name='team' placeholder='Your team number' required='required')
         button(type='submit')='Join!'
 
       div.view.js-joined.hidden
         button.js-buzzer.buzzer()=''
         p.js-joined-info=""
-        button.js-edit.secondary='Change teams'
+        button.js-edit.secondary='Exit'
 
     script(src='/socket.io/socket.io.js')
     script(src='/join.js')

@@ -34,6 +34,12 @@ io.on('connection', (socket) => {
     console.log(`${user.name} joined!`)
   })
 
+  socket.on('exit', (user) => {
+    data.users.delete(user.id)
+    io.emit('active', [...data.users].length)
+    console.log(`${user.name} exited`)
+  })
+
   socket.on('buzz', (user) => {
     data.buzzes.add(`${user.name}-${user.team}`)
     io.emit('buzzes', [...data.buzzes])
