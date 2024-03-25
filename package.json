@@ -9,7 +9,7 @@
   "author": "Dan Farrelly <daniel.j.farrelly@gmail.com> (http://danfarrelly.nyc)",
   "license": "MIT",
   "dependencies": {
-    "express": "4.14.1",
+    "express": "4.19.2",
     "pug": "2.0.0-beta11",
     "socketio": "1.0.0"
   }
